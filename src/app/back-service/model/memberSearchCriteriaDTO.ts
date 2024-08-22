@@ -9,18 +9,13 @@
  * https://github.com/swagger-api/swagger-codegen.git
  * Do not edit the class manually.
  */
-import { AddressDTO } from './addressDTO';
-import { AttendanceDTO } from './attendanceDTO';
-import { MemberDTO } from './memberDTO';
-import { PaymentDTO } from './paymentDTO';
 
 
-export interface FamilyDTO { 
-    addressDTO?: AddressDTO;
-    attendanceDTOList?: Array<AttendanceDTO>;
-    id?: number;
+export interface MemberSearchCriteriaDTO {
+    cellPhone?: string;
+    email?: string;
+    firstName?: string;
+    lastName?: string;
+    middleName?: string;
     familyId?:string;
-    memberDTOList?: Array<MemberDTO>;
-    name?: string;
-    paymentDTOList?: Array<PaymentDTO>;
 }
